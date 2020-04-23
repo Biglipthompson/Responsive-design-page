@@ -13,12 +13,23 @@ background: url ("responsive_layouts/images/responsive-layout-profile.png");
 .profile-image{
 width: 367px;
 height: 225px;
+}
 
+ul li{
+list-style-type: none;
+padding: 5px;
+margin: 5px;
+color: brown;
 }
 
 .travel-topics{
 width: 367px;
 height: 225px;
+}
+
+body{
+text-align: center;
+
 }
 
 
@@ -50,7 +61,7 @@ height: 225px;
 
 /* //////////////// MEDIA QUERIES ///////////// */
 
-@media(min-width: 600px){
+@media(min-width: 768px){
 .main-nav{
     display: flex;
     justify-content: space-around;
