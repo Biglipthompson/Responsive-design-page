@@ -1,3 +1,7 @@
+*{
+font-family: 'Roboto', sans-serif;
+}
+
 h1{
 font-family: 'Roboto', sans-serif;
 }
@@ -5,6 +9,18 @@ font-family: 'Roboto', sans-serif;
 header{
 background: url ("responsive_layouts/images/responsive-layout-profile.png");
 }
+
+.profile-image{
+width: 367px;
+height: 225px;
+
+}
+
+.travel-topics{
+width: 367px;
+height: 225px;
+}
+
 
 
 
@@ -35,10 +51,9 @@ background: url ("responsive_layouts/images/responsive-layout-profile.png");
 /* //////////////// MEDIA QUERIES ///////////// */
 
 @media(min-width: 600px){
-    .main-nav{
-        display: flex;
-        justify-content: space-around;
- 
-        }
-        
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+
+}
 }
