@@ -1,3 +1,4 @@
+/* ****************************************** START OF MOBILE FIRST APPROACH *********************************************/
 *{
 font-family: 'Roboto', sans-serif;
 }
@@ -15,6 +16,11 @@ width: 367px;
 height: 225px;
 }
 
+body{
+text-align: center;
+}
+
+
 ul li{
 list-style-type: none;
 padding: 5px;
@@ -22,17 +28,39 @@ margin: 5px;
 color: brown;
 }
 
-.travel-topics{
+.marketing{
 width: 367px;
 height: 225px;
 }
 
-body{
-text-align: center;
+.search{
+width: 367px;
+height: 225px; 
+}
 
+.travel{
+width: 367px;
+height: 225px; 
 }
 
 
+.fav-spots{
+width: 367px;
+height: 225px; 
+}
+
+.photo-gal{
+width: 367px;
+height: 225px; 
+}
+
+.calculator{
+width: 367px;
+height: 225px; 
+}
+
+
+/********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
 
 
@@ -43,28 +71,90 @@ text-align: center;
 
 
 
+/* //////////////////////////////////////////////// MEDIA QUERIES /////////////////////////////////////////////////////// */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* //////////////// MEDIA QUERIES ///////////// */
-
+/* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
 .main-nav{
-    display: flex;
-    justify-content: space-around;
+display: flex;
+justify-content: space-around;
+}
+
+.profile-image{
+float: right;
 
 }
+
+.main-header{
+margin-bottom: 200px;
+
 }
+} 
+/* END OF TABLET SIZED VIEWPORT */
+
+
+
+
+
+
+
+
+
+/* LARGEST VIEWPORT */
+
+@media(min-width: 1024px){
+
+.group::after{
+content:"";
+display:table;
+clear:both;
+ }   
+
+.main-header{
+border: solid red 2px;
+margin-bottom: 0px;
+
+}
+
+.main-nav{
+display: flex;
+justify-content: space-around;
+margin: auto;
+border: solid red 2px;
+}
+
+.nav{
+margin: auto;
+border: solid red 2px;
+}
+
+
+.intro-paragraph{
+float: left;
+border: solid red 5px;
+
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+border: solid red 2px;
+}
+
+.main-footer{
+margin-top: auto;
+
+}
+
+.portfolio{
+text-align: center;
+}
+
+
+
+}
+
+
+/* END OF LARGEST VIEWPORT */
+/* ////////////////////////////////////////////////// END OF MEDIA QUERIES/////////////////////////////////////////////////*/
