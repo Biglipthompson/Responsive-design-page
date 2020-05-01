@@ -25,7 +25,8 @@ ul li{
 list-style-type: none;
 padding: 5px;
 margin: 5px;
-color: brown;
+background: rgb(170, 170, 196);
+color: white;
 }
 
 .marketing{
@@ -65,19 +66,15 @@ height: 225px;
 
 
 
-
-
-
-
-
-
 /* //////////////////////////////////////////////// MEDIA QUERIES /////////////////////////////////////////////////////// */
 
 /* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
 .main-nav{
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
+background: rgb(170, 170, 196);
 }
 
 .profile-image{
@@ -89,12 +86,14 @@ float: right;
 margin-bottom: 200px;
 
 }
+
+ul li{
+background: rgb(170, 170, 196);
+color: white;
+}
+
 } 
 /* END OF TABLET SIZED VIEWPORT */
-
-
-
-
 
 
 
@@ -111,35 +110,30 @@ clear:both;
  }   
 
 .main-header{
-border: solid red 2px;
 margin-bottom: 0px;
 
 }
 
+
 .main-nav{
-display: flex;
-justify-content: space-around;
 margin: auto;
-border: solid red 2px;
+flex-direction: row;
+justify-content: space-around;
+background: rgb(170, 170, 196);
 }
+
 
 .nav{
 margin: auto;
-border: solid red 2px;
+background: rgb(170, 170, 196);
+color: white;
 }
 
-
-.intro-paragraph{
-float: left;
-border: solid red 5px;
-
-}
 
 body{
 display: flex;
 flex-direction: column;
 min-height: 100vh;
-border: solid red 2px;
 }
 
 .main-footer{
