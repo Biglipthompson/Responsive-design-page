@@ -18,6 +18,7 @@ height: 225px;
 
 body{
 text-align: center;
+
 }
 
 
@@ -79,12 +80,10 @@ background: rgb(170, 170, 196);
 
 .profile-image{
 float: right;
-
 }
 
 .main-header{
 margin-bottom: 200px;
-
 }
 
 ul li{
@@ -93,61 +92,35 @@ color: white;
 }
 
 } 
-/* END OF TABLET SIZED VIEWPORT */
+/* ************************** END OF TABLET SIZED VIEWPORT *****************************************/
 
 
 
 
 
-/* LARGEST VIEWPORT */
 
-@media(min-width: 1024px){
 
-.group::after{
-content:"";
-display:table;
-clear:both;
- }   
+/* ******************************** LARGEST VIEWPORT **********************************************/
 
-.main-header{
-margin-bottom: 0px;
-
-}
-
+@media(min-width: 1199x){
 
 .main-nav{
-margin: auto;
-flex-direction: row;
-justify-content: space-around;
-background: rgb(170, 170, 196);
+    margin: auto;
+    flex-direction: row;
+   display: flex;
+    justify-content: space-around;
+    background: rgb(170, 170, 196);
 }
 
+.main-footer {
+    margin-top: auto;
+    }
 
-.nav{
-margin: auto;
-background: rgb(170, 170, 196);
-color: white;
+.portfolio {
+    text-align: center;
+    }
 }
 
-
-body{
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-}
-
-.main-footer{
-margin-top: auto;
-
-}
-
-.portfolio{
-text-align: center;
-}
-
-
-
-}
 
 
 /* END OF LARGEST VIEWPORT */
