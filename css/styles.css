@@ -39,7 +39,7 @@ flex-direction: column;
 text-align: center;
 }
 
-.closing-nav{
+.bottom-nav{
 justify-content: space-between;
 display: flex;
 }
