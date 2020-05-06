@@ -1,85 +1,98 @@
 /* ****************************************** START OF MOBILE FIRST APPROACH *********************************************/
-*{
+* {
 font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+
 }
 
 h1{
 font-family: 'Roboto', sans-serif;
 }
 
+
 header{
 background: url ("responsive_layouts/images/responsive-layout-profile.png");
+
 }
 
-.profile-image{
-width: 367px;
-height: 225px;
+.container {
+margin: 0 auto;
+max-width: 1100px;
+font-family: 'Roboto', sans-serif;
+padding-bottom: 20px;
+}
+
+.col {
+display: block;
+margin: 20px 10px;
+max-width: 100%;
+height: 250px;
+text-align: center;
+letter-spacing: 1px;
+padding-top: 5px;
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
 }
 
 body{
 text-align: center;
-
+margin: 0px;
 }
-
 
 ul li{
 list-style-type: none;
 padding: 5px;
+background-color: rgb(98, 153, 236);
 margin: 5px;
-background: rgb(170, 170, 196);
-color: white;
+color: black;
 }
 
-.marketing{
+.group{
 width: 367px;
 height: 225px;
 }
 
-.search{
-width: 367px;
-height: 225px; 
+.intro{
+background-color: lightblue;
+
 }
-
-.travel{
-width: 367px;
-height: 225px; 
-}
-
-
-.fav-spots{
-width: 367px;
-height: 225px; 
-}
-
-.photo-gal{
-width: 367px;
-height: 225px; 
-}
-
-.calculator{
-width: 367px;
-height: 225px; 
-}
-
-
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
 
 
 
-/* //////////////////////////////////////////////// MEDIA QUERIES /////////////////////////////////////////////////////// */
+
+
+
+
+
+/*//////////////////////////////////////////////// MEDIA QUERIES ///////////////////////////////////////////////////////*/
 
 /* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
-.main-nav{
+.main-nav {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
-background: rgb(170, 170, 196);
+}
+
+.col {
+float: left;
+width: calc(50% - 20px);
+margin-bottom: 0;
 }
 
 .profile-image{
 float: right;
+}
+
+.portfolio{
+padding-bottom: 100px;
+text-align: center;
 }
 
 .main-header{
@@ -87,10 +100,15 @@ margin-bottom: 200px;
 }
 
 ul li{
-background: rgb(170, 170, 196);
-color: white;
-}
+color: black;
+background-color: rgb(98, 153, 236);
+    }
 
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+    }    
 } 
 /* ************************** END OF TABLET SIZED VIEWPORT *****************************************/
 
@@ -101,27 +119,37 @@ color: white;
 
 
 /* ******************************** LARGEST VIEWPORT **********************************************/
-
-@media(min-width: 1199x){
+@media(min-width: 1200px){
 
 .main-nav{
-    margin: auto;
-    flex-direction: row;
-   display: flex;
-    justify-content: space-around;
-    background: rgb(170, 170, 196);
+justify-content: space-between;
+}
+
+.nav{
+margin-right: auto;
 }
 
 .main-footer {
-    margin-top: auto;
-    }
-
-.portfolio {
-    text-align: center;
-    }
+margin-top: auto;
 }
 
+.portfolio {
+text-align: center;
+}
 
+.container {
+margin: 0 auto;
+max-width: 900px;
+font-family: 'Roboto', sans-serif;
+padding-bottom: 20px;
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+    }    
+}
 
 /* END OF LARGEST VIEWPORT */
 /* ////////////////////////////////////////////////// END OF MEDIA QUERIES/////////////////////////////////////////////////*/
