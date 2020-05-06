@@ -2,34 +2,29 @@
 * {
 font-family: 'Roboto', sans-serif;
 box-sizing: border-box;
-
+border: solid red 1px;
 }
 
 h1{
 font-family: 'Roboto', sans-serif;
 }
 
-
 header{
 background: url ("responsive_layouts/images/responsive-layout-profile.png");
+}
+
+.top-third{
+background-color: rgb(229, 244, 252);
 
 }
+
 
 .container {
 margin: 0 auto;
 max-width: 1100px;
 font-family: 'Roboto', sans-serif;
 padding-bottom: 20px;
-}
-
-.col {
-display: block;
-margin: 20px 10px;
-max-width: 100%;
-height: 250px;
-text-align: center;
-letter-spacing: 1px;
-padding-top: 5px;
+padding-top: 40px;
 }
 
 .clearfix::after {
@@ -39,27 +34,40 @@ display: table;
 }
 
 body{
+display: flex;
+flex-direction: column;
 text-align: center;
-margin: 0px;
+}
+
+.closing-nav{
+justify-content: space-between;
+display: flex;
 }
 
 ul li{
 list-style-type: none;
 padding: 5px;
-background-color: rgb(98, 153, 236);
+background-color: rgb(229, 244, 252);
 margin: 5px;
 color: black;
 }
 
 .group{
-width: 367px;
-height: 225px;
+width: 365px;
+height: 220px;
 }
 
-.intro{
-background-color: lightblue;
-
+.main-footer{
+background-color: rgb(229, 244, 252);
 }
+
+.col {
+display: block;
+margin: 20px 10px;
+max-width: 100%;
+text-align: center;
+padding-top: 5px;
+}  
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
 
@@ -76,33 +84,30 @@ background-color: lightblue;
 @media(min-width: 768px){
 .main-nav {
 display: flex;
-flex-wrap: wrap;
 justify-content: space-around;
 }
 
 .col {
 float: left;
 width: calc(50% - 20px);
-margin-bottom: 0;
 }
 
 .profile-image{
 float: right;
 }
 
-.portfolio{
-padding-bottom: 100px;
-text-align: center;
+.main-header{
+margin-bottom: 150px;
 }
 
-.main-header{
-margin-bottom: 200px;
+.wrap{
+min-height: calc(100vh - 223px); 
 }
 
 ul li{
 color: black;
-background-color: rgb(98, 153, 236);
-    }
+background-color: rgb(229, 244, 252);
+}
 
 .clearfix::after {
 content: "";
@@ -133,10 +138,6 @@ margin-right: auto;
 margin-top: auto;
 }
 
-.portfolio {
-text-align: center;
-}
-
 .container {
 margin: 0 auto;
 max-width: 900px;
@@ -148,7 +149,7 @@ padding-bottom: 20px;
 content: "";
 clear: both;
 display: table;
-    }    
+}    
 }
 
 /* END OF LARGEST VIEWPORT */
