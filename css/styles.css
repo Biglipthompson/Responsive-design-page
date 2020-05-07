@@ -2,7 +2,7 @@
 * {
 font-family: 'Roboto', sans-serif;
 box-sizing: border-box;
-border: solid red 1px;
+border: solid 1px red;
 }
 
 h1{
@@ -15,9 +15,7 @@ background: url ("responsive_layouts/images/responsive-layout-profile.png");
 
 .top-third{
 background-color: rgb(229, 244, 252);
-
 }
-
 
 .container {
 margin: 0 auto;
@@ -42,7 +40,9 @@ text-align: center;
 .bottom-nav{
 justify-content: space-between;
 display: flex;
+margin: 0 auto;
 }
+
 
 ul li{
 list-style-type: none;
@@ -68,23 +68,28 @@ max-width: 100%;
 text-align: center;
 padding-top: 5px;
 }  
+
+.nav{
+font-weight: bold;
+}
+
+
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
 
 
-
-
-
-
-
-
-/*//////////////////////////////////////////////// MEDIA QUERIES ///////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////// MEDIA QUERIES ///////////////////////////////////////////////////////*/
 
 /* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
 .main-nav {
 display: flex;
 justify-content: space-around;
+}
+
+.p-height{
+height: 40px;
+
 }
 
 .col {
@@ -94,6 +99,7 @@ width: calc(50% - 20px);
 
 .profile-image{
 float: right;
+height: 220px;
 }
 
 .main-header{
@@ -113,11 +119,17 @@ background-color: rgb(229, 244, 252);
 content: "";
 clear: both;
 display: table;
-    }    
-} 
+}    
+
+.hidden{
+visibility: hidden;
+}
+
+.bottom-nav{
+visibility: hidden;
+    }
+}
 /* ************************** END OF TABLET SIZED VIEWPORT *****************************************/
-
-
 
 
 
@@ -138,6 +150,12 @@ margin-right: auto;
 margin-top: auto;
 }
 
+.col {
+    width: calc(33.333% - 20px);
+    padding: 20px;
+
+  }
+
 .container {
 margin: 0 auto;
 max-width: 900px;
@@ -149,7 +167,11 @@ padding-bottom: 20px;
 content: "";
 clear: both;
 display: table;
-}    
+    }  
+    .bottom-nav{
+        visibility: hidden;
+    }
+
 }
 
 /* END OF LARGEST VIEWPORT */
