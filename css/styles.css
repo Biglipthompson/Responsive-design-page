@@ -2,7 +2,6 @@
 * {
 font-family: 'Roboto', sans-serif;
 box-sizing: border-box;
-border: solid 1px red;
 }
 
 h1{
@@ -35,6 +34,10 @@ body{
 display: flex;
 flex-direction: column;
 text-align: center;
+}
+
+.p-height{
+height: 40px;
 }
 
 .bottom-nav{
@@ -73,6 +76,10 @@ padding-top: 5px;
 font-weight: bold;
 }
 
+.hidden{
+visibility: hidden;
+
+}
 
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
@@ -99,11 +106,11 @@ width: calc(50% - 20px);
 
 .profile-image{
 float: right;
-height: 220px;
+height: 206px;
 }
 
 .main-header{
-margin-bottom: 150px;
+padding-bottom: 150px;
 }
 
 .wrap{
@@ -122,12 +129,20 @@ display: table;
 }    
 
 .hidden{
-visibility: hidden;
+visibility: visible;
+display: flex;
+justify-content: space-between;
+margin: auto;
 }
 
 .bottom-nav{
 visibility: hidden;
     }
+
+.main-footer{
+padding: auto;
+
+}
 }
 /* ************************** END OF TABLET SIZED VIEWPORT *****************************************/
 
