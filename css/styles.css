@@ -1,84 +1,94 @@
 /* ****************************************** START OF MOBILE FIRST APPROACH *********************************************/
 * {
-font-family: 'Roboto', sans-serif;
-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 h1{
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav{
+    text-align: center;
+}
+
+.main-header{
+    background-color: rgb(229, 244, 252);
+
 }
 
 header{
-background: url ("responsive_layouts/images/responsive-layout-profile.png");
+    background: url ("responsive_layouts/images/responsive-layout-profile.png");
 }
 
-.top-third{
-background-color: rgb(229, 244, 252);
-}
 
 .container {
-margin: 0 auto;
-max-width: 1100px;
-font-family: 'Roboto', sans-serif;
-padding-bottom: 20px;
-padding-top: 40px;
+    margin: 0 auto;
+    max-width: 1100px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 .clearfix::after {
-content: "";
-clear: both;
-display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 body{
-display: flex;
-flex-direction: column;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .p-height{
-height: 40px;
+    height: 40px;
+}
+
+.intro{
+padding-bottom: 50px;
 }
 
 .bottom-nav{
-justify-content: space-between;
-display: flex;
-margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
 }
 
 
 ul li{
-list-style-type: none;
-padding: 5px;
-background-color: rgb(229, 244, 252);
-margin: 5px;
-color: black;
+    list-style-type: none;
+    padding: 5px;
+    background-color: rgb(229, 244, 252);
+    margin: 5px;
+    color: black;
 }
 
 .group{
-width: 365px;
-height: 220px;
+    width: 365px;
+    height: 220px;
 }
 
+
 .main-footer{
-background-color: rgb(229, 244, 252);
+    background-color: rgb(229, 244, 252);
 }
 
 .col {
-display: block;
-margin: 20px 10px;
-max-width: 100%;
-text-align: center;
-padding-top: 5px;
+    display: block;
+    margin: 20px 10px;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 5px;
 }  
 
 .nav{
-font-weight: bold;
+    font-weight: bold;
 }
 
 .hidden{
-visibility: hidden;
-
+    display: none;
 }
 
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
@@ -89,72 +99,73 @@ visibility: hidden;
 
 /* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
-.main-nav {
-display: flex;
-justify-content: space-around;
+    .main-nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 .p-height{
-height: 40px;
-
-}
+    height: 40px;
+    }
 
 .col {
-float: left;
-width: calc(50% - 20px);
+    float: left;
+    width: calc(50% - 20px);
 }
 
 .profile-image{
-float: right;
-height: 206px;
+    float: right;
+    height: 206px;
 }
 
 .main-header{
-padding-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 .wrap{
-min-height: calc(100vh - 223px); 
+    min-height: calc(100vh - 223px); 
 }
 
 ul li{
-color: black;
-background-color: rgb(229, 244, 252);
+    color: black;
+    background-color: rgb(229, 244, 252);
 }
 
 .clearfix::after {
-content: "";
-clear: both;
-display: table;
+    content: "";
+    clear: both;
+    display: table;
 }    
 
 .hidden{
-visibility: visible;
-display: flex;
-justify-content: space-between;
-margin: auto;
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .bottom-nav{
-visibility: hidden;
-    }
+   display: none;
+}
 
 .main-footer{
-padding: auto;
-
+    padding: auto;
 }
+
+.bottom-name{
+    margin-right: auto;
+    }
 }
-/* ************************** END OF TABLET SIZED VIEWPORT *****************************************/
+/***************************************************** END OF TABLET SIZED VIEWPORT *****************************************/
 
 
 
 
-
-/* ******************************** LARGEST VIEWPORT **********************************************/
-@media(min-width: 1200px){
+/********************************************************* LARGEST VIEWPORT **********************************************/
+@media(min-width: 1180px){
 
 .main-nav{
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .nav{
@@ -163,13 +174,23 @@ margin-right: auto;
 
 .main-footer {
 margin-top: auto;
+text-align: center;
 }
 
 .col {
-    width: calc(33.333% - 20px);
-    padding: 20px;
+width: calc(33.333% - 20px);
+text-align: center;
+}
 
-  }
+
+.hidden{
+display: flex;
+justify-content: space-between;
+}
+
+.bottom-name {
+margin-right: auto;
+}
 
 .container {
 margin: 0 auto;
@@ -178,14 +199,16 @@ font-family: 'Roboto', sans-serif;
 padding-bottom: 20px;
 }
 
+.bottom-nav{
+    visibility: hidden;
+}
+
 .clearfix::after {
 content: "";
 clear: both;
 display: table;
-    }  
-    .bottom-nav{
-        visibility: hidden;
-    }
+}  
+
 
 }
 
