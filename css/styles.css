@@ -13,14 +13,9 @@ h1{
     text-align: center;
 }
 
-.main-header{
-    background-color: rgb(229, 244, 252);
-    padding-bottom: 70px;
-}
 header{ 
     background: url("responsive_layouts/images/responsive-layout-profile.png")
 }
-
 
 
 .container {
@@ -29,8 +24,18 @@ header{
     font-family: 'Roboto', sans-serif;
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+.profile-image{
+    width: 300px;
+    height: 150px;
+    padding-left: 40px;
+
+}
 
 
+li{
+    text-align: center;
 }
 
 .clearfix::after {
@@ -60,10 +65,9 @@ padding-bottom: 50px;
 }
 
 
-ul li{
+li{
     list-style-type: none;
     padding: 5px;
-    background-color: rgb(229, 244, 252);
     margin: 5px;
     color: black;
 }
@@ -97,6 +101,10 @@ ul li{
 .student{
     margin-right: auto;   
 }
+
+.name{
+font-size: 25px;
+}
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
 
@@ -114,37 +122,24 @@ ul li{
     width: calc(50% - 20px);
 }
 
+.wrap{
+    padding-right: 90px;
+}
+
 
 .profile-image{
     float: right;
-    height: 216px;
-    width: 250px;
+    height: 220px;
+    width: 356px;
 }
 
 .main-header{
-    padding-bottom: 150px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.wrap{
-    min-height: calc(100vh - 223px); 
-}
-
-.nav
-.main-nav
-ul li {
-    display: flex;
-    text-align: center;
-    display: inline-block;
-}
-
-
-
-ul li{
+li{
     color: black;
-    background-color: rgb(229, 244, 252);
-    padding: 5px;
     display: inline-block;
 }
 
@@ -174,19 +169,38 @@ ul li{
 
 
 /********************************************************* LARGEST VIEWPORT **********************************************/
-@media(min-width: 1200px){
+@media(min-width: 1190px){
 
 .main-nav{
     justify-content: space-between;
     display: flex;
 }
 
-.nav{
+.name{
     margin-right: auto;
 }
 
+li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-image{
+width: 500px;
+padding-left: 113px;
+}
+
+.intro{
+    padding-left: 112px;
+}
+
+
 .p-height{
     height: 40px;
+}
+
+.wrap{
+    padding-right: 130px;
 }
 
 .main-footer {
