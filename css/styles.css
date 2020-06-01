@@ -1,8 +1,7 @@
 /* ****************************************** START OF MOBILE FIRST APPROACH *********************************************/
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
     box-sizing: border-box;
-   
 }
 
 h1{
@@ -13,6 +12,11 @@ h1{
     text-align: center;
 }
 
+a:link{
+    text-decoration: none;
+}
+
+
 header{ 
     background: url("responsive_layouts/images/responsive-layout-profile.png")
 }
@@ -20,7 +24,6 @@ header{
 
 .container {
     margin: 0 auto;
-    max-width: 1100px;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -30,7 +33,6 @@ header{
     width: 300px;
     height: 150px;
     padding-left: 40px;
-
 }
 
 
@@ -85,7 +87,6 @@ li{
 .col {
     display: block;
     margin: 20px 10px;
-    max-width: 100%;
     text-align: center;
     padding-top: 5px;
 }  
@@ -103,7 +104,7 @@ li{
 }
 
 .name{
-font-size: 25px;
+font-size: 20px;
 }
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
@@ -122,20 +123,14 @@ font-size: 25px;
     width: calc(50% - 20px);
 }
 
-.wrap{
-    padding-right: 90px;
-}
-
-
 .profile-image{
     float: right;
     height: 220px;
     width: 356px;
 }
 
-.main-header{
-    padding-left: 100px;
-    padding-right: 100px;
+.intro{
+    text-align: left;
 }
 
 li{
@@ -153,6 +148,10 @@ li{
 .bottom-nav{
    display: none;
 }
+a:link{
+    text-decoration: none;
+}
+
 
 .bottom-name{
     margin-right: auto;
@@ -162,14 +161,14 @@ li{
     content: "";
     clear: both;
     display: table;
-    }    
+    }  
     
 }
 /***************************************************** END OF TABLET SIZED VIEWPORT *****************************************/
 
 
 /********************************************************* LARGEST VIEWPORT **********************************************/
-@media(min-width: 1190px){
+@media(min-width: 1024px){
 
 .main-nav{
     justify-content: space-between;
@@ -178,29 +177,34 @@ li{
 
 .name{
     margin-right: auto;
-}
-
-li{
-    display: flex;
-    justify-content: space-around;
+    font-size: 20px;
+    margin-left: 2px;
 }
 
 .profile-image{
-width: 500px;
-padding-left: 113px;
+    float: right;
+    height: 220px;
+    width: 356px;
 }
 
 .intro{
-    padding-left: 112px;
+    text-align: left;
 }
-
 
 .p-height{
     height: 40px;
 }
 
-.wrap{
-    padding-right: 130px;
+li{
+    padding: 10px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: green;
 }
 
 .main-footer {
@@ -218,20 +222,14 @@ padding-left: 113px;
     justify-content: space-between;
 }
 
-.main-header{
-    padding-left: 110px;
-    padding-right: 110px;
-}
-
 .bottom-name {
 margin-right: auto;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 20px;   
+  
+    
 }
 
 .bottom-nav{
