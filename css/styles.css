@@ -148,10 +148,10 @@ li{
 .bottom-nav{
    display: none;
 }
+
 a:link{
     text-decoration: none;
 }
-
 
 .bottom-name{
     margin-right: auto;
@@ -181,6 +181,7 @@ a:link{
     height: 220px;
     width: 356px;
 }
+
 
 .intro{
     text-align: left;
