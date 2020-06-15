@@ -16,11 +16,9 @@ a:link{
     text-decoration: none;
 }
 
-
 header{ 
     background: url("responsive_layouts/images/responsive-layout-profile.png")
 }
-
 
 .container {
     margin: 0 auto;
@@ -34,7 +32,6 @@ header{
     height: 150px;
     padding-left: 40px;
 }
-
 
 li{
     text-align: center;
@@ -52,13 +49,19 @@ body{
     text-align: center;
 }
 
+.portfolio{
+    margin-top: 100px;
+}
+
 .p-height{
     height: 40px;
 }
 
 .intro{
-padding-bottom: 50px;
+    padding-bottom: 75px;
+    height: 10px;
 }
+
 
 .bottom-nav{
     justify-content: space-between;
@@ -75,20 +78,15 @@ li{
 }
 
 .group{
-    width: 365px;
-    height: 220px;
-}
-
-
-.main-footer{
-    background-color: rgb(229, 244, 252);
+    width: 300px;
+    height: 200px;
 }
 
 .col {
     display: block;
     margin: 20px 10px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }  
 
 .nav{
