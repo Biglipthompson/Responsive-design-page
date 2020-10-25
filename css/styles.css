@@ -20,22 +20,13 @@ header{
     background: url("responsive_layouts/images/responsive-layout-profile.png")
 }
 
-.container {
+.container {                           
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 30px; 
 }
 
-.profile-image{
-    width: 300px;
-    height: 150px;
-    padding-left: 40px;
-}
-
-li{
-    text-align: center;
-}
 
 .clearfix::after {
     content: "";
@@ -43,11 +34,22 @@ li{
     display: table;
 }
 
-body{
+.profile-image {        
+    width: 300px;
+    height: 150px;
+    padding-left: 40px;
+}  
+
+li{
+    text-align: center;
+}
+
+
+body{                 
     display: flex;
     flex-direction: column;
     text-align: center;
-}
+} 
 
 .portfolio{
     margin-top: 100px;
@@ -206,9 +208,10 @@ a:hover{
     text-align: center;
 }
 
-.col {
-    width: calc(33.333% - 20px);
-    text-align: center;
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .hidden{
