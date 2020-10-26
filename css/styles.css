@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-}
 
 .main-nav{
     text-align: center;
+}
+
+.intro-section{
+    
 }
 
 a:link{
@@ -18,13 +19,6 @@ a:link{
 
 header{ 
     background: url("responsive_layouts/images/responsive-layout-profile.png")
-}
-
-.container {                           
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 30px;
-    padding-top: 30px; 
 }
 
 
@@ -37,12 +31,10 @@ header{
 .profile-image {        
     width: 300px;
     height: 150px;
-    padding-left: 40px;
 }  
-
-li{
-    text-align: center;
-}
+.intro-section{
+    margin-bottom: 10px;  
+   }
 
 
 body{                 
@@ -50,19 +42,6 @@ body{
     flex-direction: column;
     text-align: center;
 } 
-
-.portfolio{
-    margin-top: 100px;
-}
-
-.p-height{
-    height: 40px;
-}
-
-.intro{
-    padding-bottom: 75px;
-    height: 10px;
-}
 
 
 .bottom-nav{
@@ -84,23 +63,9 @@ li{
     height: 200px;
 }
 
-.col {
-    display: block;
-    margin: 20px 10px;
-    text-align: center;
-    padding-top: 10px;
-}  
-
-.nav{
-    font-weight: bold;
-}
 
 .hidden{
     display: none;
-}
-
-.student{
-    margin-right: auto;   
 }
 
 .name{
@@ -114,23 +79,22 @@ font-size: 20px;
 
 /* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
-.p-height{
-    height: 40px;
-    }
-
-.col {
-    float: left;
-    width: calc(50% - 20px);
-}
 
 .profile-image{
     float: right;
     height: 220px;
     width: 356px;
 }
+.intro-section{ 
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 10px; 
+}
 
-.intro{
-    text-align: left;
+.grid-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 li{
@@ -149,13 +113,14 @@ li{
    display: none;
 }
 
+
 a:link{
     text-decoration: none;
 }
 
 .bottom-name{
     margin-right: auto;
-    }
+}
 
 .clearfix::after {
     content: "";
@@ -185,13 +150,17 @@ a:link{
     width: 356px;
 }
 
-
-.intro{
-    text-align: left;
+.intro-section{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 10px;  
 }
 
-.p-height{
-    height: 40px;
+.grid-1{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
 }
 
 
@@ -206,12 +175,6 @@ a:hover{
 .main-footer {
     margin-top: auto;
     text-align: center;
-}
-
-.container{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
 }
 
 .hidden{
