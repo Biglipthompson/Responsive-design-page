@@ -2,54 +2,55 @@
 * {
     font-family: 'Balsamiq Sans', cursive;
     box-sizing: border-box;
+    margin: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    height: 100vh;
+}
+header{
+    margin-top: 0 auto;
+}
 .main-nav{
     text-align: center;
-}
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgb(59, 59, 59), black);
 
-.intro-section{
-    
+}
+.profile-image{
+    float: right;
+    border-radius: 25px;
+    height: 220px;
+    width: 356px;
 }
 
 a:link{
+    color: yellow;
     text-decoration: none;
 }
-
-header{ 
-    background: url("responsive_layouts/images/responsive-layout-profile.png")
-}
-
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.profile-image {        
-    width: 300px;
-    height: 150px;
-}  
 .intro-section{
     margin-bottom: 10px;  
-   }
-
-
+    margin-left: auto;
+    margin-right: auto;
+}
 body{                 
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-image: radial-gradient(black, rgb(13, 82, 139));
 } 
-
-
 .bottom-nav{
     justify-content: space-between;
     display: flex;
-    margin: 0 auto;
+    background-color: linear-gradient(black, rgb(54, 53, 53));
 }
-
 
 li{
     list-style-type: none;
@@ -59,17 +60,26 @@ li{
 }
 
 .group{
+    border-radius: 25px;
     width: 300px;
     height: 200px;
 }
-
 
 .hidden{
     display: none;
 }
 
 .name{
-font-size: 20px;
+    color: white;
+    font-size: 20px;
+}
+.main-footer{
+    background-image: linear-gradient(rgb(59, 59, 59), black);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 /********************************************** END OF MOBILE FIRST APPROACH **************************************************/
 
@@ -79,7 +89,9 @@ font-size: 20px;
 
 /* TABLET SIZED VIDEPORT */
 @media(min-width: 768px){
-
+.name{
+    color: white;
+}
 .profile-image{
     float: right;
     height: 220px;
@@ -134,14 +146,19 @@ a:link{
 
 /********************************************************* LARGEST VIEWPORT **********************************************/
 @media(min-width: 1024px){
-
 .main-nav{
   display: flex;
   justify-content: space-between;  
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+  background-color: black;
 }
 
 .name{
     margin-right: auto;
+    color: white;
 }
 
 .profile-image{
@@ -173,7 +190,8 @@ a:hover{
 }
 
 .main-footer {
-    margin-top: auto;
+    margin-top: 0;
+   width: 100%;
     text-align: center;
 }
 
